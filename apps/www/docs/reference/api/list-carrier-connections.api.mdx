@@ -1,0 +1,2372 @@
+---
+id: list-carrier-connections
+title: "List carrier connections"
+description: "Retrieve all carrier connections"
+sidebar_label: "List carrier connections"
+hide_title: true
+hide_table_of_contents: true
+api: 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
+sidebar_class_name: "get api-method"
+info_path: docs/reference/api/karrio-api
+custom_edit_url: null
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import SecuritySchemes from "@theme/ApiExplorer/SecuritySchemes";
+import MimeTabs from "@theme/MimeTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem";
+import SchemaTabs from "@theme/SchemaTabs";
+import Heading from "@theme/Heading";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"List carrier connections"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/v1/connections"}
+>
+  
+</MethodEndpoint>
+
+
+
+Retrieve all carrier connections
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<details
+  style={{"marginBottom":"1rem"}}
+  className={"openapi-markdown__details"}
+  data-collapsed={false}
+  open={true}
+>
+  <summary
+    style={{}}
+  >
+    <h3
+      className={"openapi-markdown__details-summary-header-params"}
+    >
+      Query Parameters
+    </h3>
+  </summary><div>
+    <ul>
+      <ParamsItem
+        className={"paramsItem"}
+        param={{"in":"query","name":"active","schema":{"type":"boolean"}}}
+      >
+        
+      </ParamsItem><ParamsItem
+        className={"paramsItem"}
+        param={{"in":"query","name":"carrier_name","schema":{"type":"string"},"description":"The unique carrier slug. <br/>Values: `allied_express`, `allied_express_local`, `amazon_shipping`, `aramex`, `asendia_us`, `australiapost`, `boxknight`, `bpost`, `canadapost`, `canpar`, `chronopost`, `colissimo`, `dhl_express`, `dhl_parcel_de`, `dhl_poland`, `dhl_universal`, `dicom`, `dpd`, `dpdhl`, `easypost`, `easyship`, `eshipper`, `fedex`, `fedex_ws`, `freightcom`, `generic`, `geodis`, `hay_post`, `laposte`, `locate2u`, `nationex`, `purolator`, `roadie`, `royalmail`, `sapient`, `seko`, `sendle`, `tge`, `tnt`, `ups`, `usps`, `usps_international`, `usps_wt`, `usps_wt_international`, `zoom2u`"}}
+      >
+        
+      </ParamsItem><ParamsItem
+        className={"paramsItem"}
+        param={{"in":"query","name":"metadata_key","schema":{"type":"string"}}}
+      >
+        
+      </ParamsItem><ParamsItem
+        className={"paramsItem"}
+        param={{"in":"query","name":"metadata_value","schema":{"type":"string"}}}
+      >
+        
+      </ParamsItem><ParamsItem
+        className={"paramsItem"}
+        param={{"in":"query","name":"system_only","schema":{"type":"boolean"}}}
+      >
+        
+      </ParamsItem>
+    </ul>
+  </div>
+</details><div>
+  <div>
+    <ApiTabs
+      label={undefined}
+      id={undefined}
+    >
+      <TabItem
+        label={"200"}
+        value={"200"}
+      >
+        <div>
+          
+          
+          
+          
+          
+        </div><div>
+          <MimeTabs
+            className={"openapi-tabs__mime"}
+            schemaType={"response"}
+          >
+            <TabItem
+              label={"application/json"}
+              value={"application/json"}
+            >
+              <SchemaTabs
+                className={"openapi-tabs__schema"}
+              >
+                <TabItem
+                  label={"Schema"}
+                  value={"Schema"}
+                >
+                  <details
+                    style={{}}
+                    className={"openapi-markdown__details response"}
+                    data-collapsed={false}
+                    open={true}
+                  >
+                    <summary
+                      style={{}}
+                      className={"openapi-markdown__details-summary-response"}
+                    >
+                      <strong>
+                        Schema
+                      </strong>
+                    </summary><div
+                      style={{"textAlign":"left","marginLeft":"1rem"}}
+                    >
+                      
+                    </div><ul
+                      style={{"marginLeft":"1rem"}}
+                    >
+                      <SchemaItem
+                        collapsible={false}
+                        name={"count"}
+                        required={false}
+                        schemaName={"integer"}
+                        qualifierMessage={undefined}
+                        schema={{"type":"integer","nullable":true}}
+                      >
+                        
+                      </SchemaItem><SchemaItem
+                        collapsible={false}
+                        name={"next"}
+                        required={false}
+                        schemaName={"uri"}
+                        qualifierMessage={undefined}
+                        schema={{"type":"string","format":"uri","nullable":true}}
+                      >
+                        
+                      </SchemaItem><SchemaItem
+                        collapsible={false}
+                        name={"previous"}
+                        required={false}
+                        schemaName={"uri"}
+                        qualifierMessage={undefined}
+                        schema={{"type":"string","format":"uri","nullable":true}}
+                      >
+                        
+                      </SchemaItem><SchemaItem
+                        collapsible={true}
+                        className={"schemaItem"}
+                      >
+                        <details
+                          style={{}}
+                          className={"openapi-markdown__details"}
+                        >
+                          <summary
+                            style={{}}
+                          >
+                            <span
+                              className={"openapi-schema__container"}
+                            >
+                              <strong
+                                className={"openapi-schema__property"}
+                              >
+                                results
+                              </strong><span
+                                className={"openapi-schema__name"}
+                              >
+                                 object[]
+                              </span><span
+                                className={"openapi-schema__divider"}
+                              >
+                                
+                              </span><span
+                                className={"openapi-schema__required"}
+                              >
+                                required
+                              </span>
+                            </span>
+                          </summary><div
+                            style={{"marginLeft":"1rem"}}
+                          >
+                            <li>
+                              <div
+                                style={{"fontSize":"var(--ifm-code-font-size)","opacity":"0.6","marginLeft":"-.5rem","paddingBottom":".5rem"}}
+                              >
+                                Array [
+                              </div>
+                            </li><SchemaItem
+                              collapsible={false}
+                              name={"id"}
+                              required={true}
+                              schemaName={"string"}
+                              qualifierMessage={undefined}
+                              schema={{"type":"string","description":"A unique carrier connection identifier"}}
+                            >
+                              
+                            </SchemaItem><SchemaItem
+                              collapsible={false}
+                              name={"object_type"}
+                              required={false}
+                              schemaName={"string"}
+                              qualifierMessage={undefined}
+                              schema={{"type":"string","default":"carrier-connection","description":"Specifies the object type"}}
+                            >
+                              
+                            </SchemaItem><SchemaItem
+                              collapsible={false}
+                              name={"carrier_name"}
+                              required={true}
+                              schemaName={"string"}
+                              qualifierMessage={"**Possible values:** [`allied_express`, `allied_express_local`, `amazon_shipping`, `aramex`, `asendia_us`, `australiapost`, `boxknight`, `bpost`, `canadapost`, `canpar`, `chronopost`, `colissimo`, `dhl_express`, `dhl_parcel_de`, `dhl_poland`, `dhl_universal`, `dicom`, `dpd`, `dpdhl`, `easypost`, `easyship`, `eshipper`, `fedex`, `fedex_ws`, `freightcom`, `generic`, `geodis`, `hay_post`, `laposte`, `locate2u`, `nationex`, `purolator`, `roadie`, `royalmail`, `sapient`, `seko`, `sendle`, `tge`, `tnt`, `ups`, `usps`, `usps_international`, `usps_wt`, `usps_wt_international`, `zoom2u`]"}
+                              schema={{"enum":["allied_express","allied_express_local","amazon_shipping","aramex","asendia_us","australiapost","boxknight","bpost","canadapost","canpar","chronopost","colissimo","dhl_express","dhl_parcel_de","dhl_poland","dhl_universal","dicom","dpd","dpdhl","easypost","easyship","eshipper","fedex","fedex_ws","freightcom","generic","geodis","hay_post","laposte","locate2u","nationex","purolator","roadie","royalmail","sapient","seko","sendle","tge","tnt","ups","usps","usps_international","usps_wt","usps_wt_international","zoom2u"],"type":"string","x-spec-enum-id":"3812983dc743ed62","description":"A carrier connection type."}}
+                            >
+                              
+                            </SchemaItem><SchemaItem
+                              collapsible={false}
+                              name={"display_name"}
+                              required={false}
+                              schemaName={"string"}
+                              qualifierMessage={undefined}
+                              schema={{"type":"string","description":"The carrier connection type verbose name."}}
+                            >
+                              
+                            </SchemaItem><SchemaItem
+                              collapsible={false}
+                              name={"carrier_id"}
+                              required={true}
+                              schemaName={"string"}
+                              qualifierMessage={undefined}
+                              schema={{"type":"string","description":"A carrier connection friendly name."}}
+                            >
+                              
+                            </SchemaItem><SchemaItem
+                              collapsible={true}
+                              className={"schemaItem"}
+                            >
+                              <details
+                                style={{}}
+                                className={"openapi-markdown__details"}
+                              >
+                                <summary
+                                  style={{}}
+                                >
+                                  <span
+                                    className={"openapi-schema__container"}
+                                  >
+                                    <strong
+                                      className={"openapi-schema__property"}
+                                    >
+                                      credentials
+                                    </strong><span
+                                      className={"openapi-schema__name"}
+                                    >
+                                       object
+                                    </span>
+                                  </span>
+                                </summary><div
+                                  style={{"marginLeft":"1rem"}}
+                                >
+                                  <div>
+                                    <span
+                                      className={"badge badge--info"}
+                                      style={{"marginBottom":"1rem"}}
+                                    >
+                                      oneOf
+                                    </span><SchemaTabs>
+                                      <TabItem
+                                        label={"zoom2u"}
+                                        value={"0-item-properties"}
+                                      >
+                                        <SchemaItem
+                                          collapsible={false}
+                                          name={"api_key"}
+                                          required={true}
+                                          schemaName={"string"}
+                                          qualifierMessage={undefined}
+                                          schema={{"type":"string"}}
+                                        >
+                                          
+                                        </SchemaItem>
+                                      </TabItem><TabItem
+                                        label={"usps_wt_international"}
+                                        value={"1-item-properties"}
+                                      >
+                                        <SchemaItem
+                                          collapsible={false}
+                                          name={"username"}
+                                          required={true}
+                                          schemaName={"string"}
+                                          qualifierMessage={undefined}
+                                          schema={{"type":"string"}}
+                                        >
+                                          
+                                        </SchemaItem><SchemaItem
+                                          collapsible={false}
+                                          name={"password"}
+                                          required={true}
+                                          schemaName={"string"}
+                                          qualifierMessage={undefined}
+                                          schema={{"type":"string"}}
+                                        >
+                                          
+                                        </SchemaItem><SchemaItem
+                                          collapsible={false}
+                                          name={"mailer_id"}
+                                          required={false}
+                                          schemaName={"string"}
+                                          qualifierMessage={undefined}
+                                          schema={{"type":"string"}}
+                                        >
+                                          
+                                        </SchemaItem><SchemaItem
+                                          collapsible={false}
+                                          name={"customer_registration_id"}
+                                          required={false}
+                                          schemaName={"string"}
+                                          qualifierMessage={undefined}
+                                          schema={{"type":"string"}}
+                                        >
+                                          
+                                        </SchemaItem><SchemaItem
+                                          collapsible={false}
+                                          name={"logistics_manager_mailer_id"}
+                                          required={false}
+                                          schemaName={"string"}
+                                          qualifierMessage={undefined}
+                                          schema={{"type":"string"}}
+                                        >
+                                          
+                                        </SchemaItem>
+                                      </TabItem><TabItem
+                                        label={"usps_wt"}
+                                        value={"2-item-properties"}
+                                      >
+                                        <SchemaItem
+                                          collapsible={false}
+                                          name={"username"}
+                                          required={true}
+                                          schemaName={"string"}
+                                          qualifierMessage={undefined}
+                                          schema={{"type":"string"}}
+                                        >
+                                          
+                                        </SchemaItem><SchemaItem
+                                          collapsible={false}
+                                          name={"password"}
+                                          required={true}
+                                          schemaName={"string"}
+                                          qualifierMessage={undefined}
+                                          schema={{"type":"string"}}
+                                        >
+                                          
+                                        </SchemaItem><SchemaItem
+                                          collapsible={false}
+                                          name={"mailer_id"}
+                                          required={false}
+                                          schemaName={"string"}
+                                          qualifierMessage={undefined}
+                                          schema={{"type":"string"}}
+                                        >
+                                          
+                                        </SchemaItem><SchemaItem
+                                          collapsible={false}
+                                          name={"customer_registration_id"}
+                                          required={false}
+                                          schemaName={"string"}
+                                          qualifierMessage={undefined}
+                                          schema={{"type":"string"}}
+                                        >
+                                          
+                                        </SchemaItem><SchemaItem
+                                          collapsible={false}
+                                          name={"logistics_manager_mailer_id"}
+                                          required={false}
+                                          schemaName={"string"}
+                                          qualifierMessage={undefined}
+                                          schema={{"type":"string"}}
+                                        >
+                                          
+                                        </SchemaItem>
+                                      </TabItem><TabItem
+                                        label={"usps_international"}
+                                        value={"3-item-properties"}
+                                      >
+                                        <SchemaItem
+                                          collapsible={false}
+                                          name={"client_id"}
+                                          required={true}
+                                          schemaName={"string"}
+                                          qualifierMessage={undefined}
+                                          schema={{"type":"string"}}
+                                        >
+                                          
+                                        </SchemaItem><SchemaItem
+                                          collapsible={false}
+                                          name={"client_secret"}
+                                          required={true}
+                                          schemaName={"string"}
+                                          qualifierMessage={undefined}
+                                          schema={{"type":"string"}}
+                                        >
+                                          
+                                        </SchemaItem><SchemaItem
+                                          collapsible={false}
+                                          name={"account_type"}
+                                          required={false}
+                                          schemaName={"string"}
+                                          qualifierMessage={undefined}
+                                          schema={{"type":"string"}}
+                                        >
+                                          
+                                        </SchemaItem><SchemaItem
+                                          collapsible={false}
+                                          name={"account_number"}
+                                          required={false}
+                                          schemaName={"string"}
+                                          qualifierMessage={undefined}
+                                          schema={{"type":"string"}}
+                                        >
+                                          
+                                        </SchemaItem>
+                                      </TabItem><TabItem
+                                        label={"usps"}
+                                        value={"4-item-properties"}
+                                      >
+                                        <SchemaItem
+                                          collapsible={false}
+                                          name={"client_id"}
+                                          required={true}
+                                          schemaName={"string"}
+                                          qualifierMessage={undefined}
+                                          schema={{"type":"string"}}
+                                        >
+                                          
+                                        </SchemaItem><SchemaItem
+                                          collapsible={false}
+                                          name={"client_secret"}
+                                          required={true}
+                                          schemaName={"string"}
+                                          qualifierMessage={undefined}
+                                          schema={{"type":"string"}}
+                                        >
+                                          
+                                        </SchemaItem><SchemaItem
+                                          collapsible={false}
+                                          name={"account_type"}
+                                          required={false}
+                                          schemaName={"string"}
+                                          qualifierMessage={undefined}
+                                          schema={{"type":"string"}}
+                                        >
+                                          
+                                        </SchemaItem><SchemaItem
+                                          collapsible={false}
+                                          name={"account_number"}
+                                          required={false}
+                                          schemaName={"string"}
+                                          qualifierMessage={undefined}
+                                          schema={{"type":"string"}}
+                                        >
+                                          
+                                        </SchemaItem>
+                                      </TabItem><TabItem
+                                        label={"ups"}
+                                        value={"5-item-properties"}
+                                      >
+                                        <SchemaItem
+                                          collapsible={false}
+                                          name={"client_id"}
+                                          required={true}
+                                          schemaName={"string"}
+                                          qualifierMessage={undefined}
+                                          schema={{"type":"string"}}
+                                        >
+                                          
+                                        </SchemaItem><SchemaItem
+                                          collapsible={false}
+                                          name={"client_secret"}
+                                          required={true}
+                                          schemaName={"string"}
+                                          qualifierMessage={undefined}
+                                          schema={{"type":"string"}}
+                                        >
+                                          
+                                        </SchemaItem><SchemaItem
+                                          collapsible={false}
+                                          name={"account_number"}
+                                          required={false}
+                                          schemaName={"string"}
+                                          qualifierMessage={undefined}
+                                          schema={{"type":"string"}}
+                                        >
+                                          
+                                        </SchemaItem><SchemaItem
+                                          collapsible={false}
+                                          name={"account_country_code"}
+                                          required={false}
+                                          schemaName={"string"}
+                                          qualifierMessage={undefined}
+                                          schema={{"type":"string"}}
+                                        >
+                                          
+                                        </SchemaItem>
+                                      </TabItem><TabItem
+                                        label={"tnt"}
+                                        value={"6-item-properties"}
+                                      >
+                                        <SchemaItem
+                                          collapsible={false}
+                                          name={"username"}
+                                          required={true}
+                                          schemaName={"string"}
+                                          qualifierMessage={undefined}
+                                          schema={{"type":"string"}}
+                                        >
+                                          
+                                        </SchemaItem><SchemaItem
+                                          collapsible={false}
+                                          name={"password"}
+                                          required={true}
+                                          schemaName={"string"}
+                                          qualifierMessage={undefined}
+                                          schema={{"type":"string"}}
+                                        >
+                                          
+                                        </SchemaItem><SchemaItem
+                                          collapsible={false}
+                                          name={"account_number"}
+                                          required={false}
+                                          schemaName={"string"}
+                                          qualifierMessage={undefined}
+                                          schema={{"type":"string"}}
+                                        >
+                                          
+                                        </SchemaItem><SchemaItem
+                                          collapsible={false}
+                                          name={"account_country_code"}
+                                          required={false}
+                                          schemaName={"string"}
+                                          qualifierMessage={undefined}
+                                          schema={{"type":"string"}}
+                                        >
+                                          
+                                        </SchemaItem>
+                                      </TabItem><TabItem
+                                        label={"tge"}
+                                        value={"7-item-properties"}
+                                      >
+                                        <SchemaItem
+                                          collapsible={false}
+                                          name={"username"}
+                                          required={true}
+                                          schemaName={"string"}
+                                          qualifierMessage={undefined}
+                                          schema={{"type":"string"}}
+                                        >
+                                          
+                                        </SchemaItem><SchemaItem
+                                          collapsible={false}
+                                          name={"password"}
+                                          required={true}
+                                          schemaName={"string"}
+                                          qualifierMessage={undefined}
+                                          schema={{"type":"string"}}
+                                        >
+                                          
+                                        </SchemaItem><SchemaItem
+                                          collapsible={false}
+                                          name={"api_key"}
+                                          required={true}
+                                          schemaName={"string"}
+                                          qualifierMessage={undefined}
+                                          schema={{"type":"string"}}
+                                        >
+                                          
+                                        </SchemaItem><SchemaItem
+                                          collapsible={false}
+                                          name={"toll_username"}
+                                          required={true}
+                                          schemaName={"string"}
+                                          qualifierMessage={undefined}
+                                          schema={{"type":"string"}}
+                                        >
+                                          
+                                        </SchemaItem><SchemaItem
+                                          collapsible={false}
+                                          name={"toll_password"}
+                                          required={true}
+                                          schemaName={"string"}
+                                          qualifierMessage={undefined}
+                                          schema={{"type":"string"}}
+                                        >
+                                          
+                                        </SchemaItem><SchemaItem
+                                          collapsible={false}
+                                          name={"my_toll_token"}
+                                          required={true}
+                                          schemaName={"string"}
+                                          qualifierMessage={undefined}
+                                          schema={{"type":"string"}}
+                                        >
+                                          
+                                        </SchemaItem><SchemaItem
+                                          collapsible={false}
+                                          name={"my_toll_identity"}
+                                          required={true}
+                                          schemaName={"string"}
+                                          qualifierMessage={undefined}
+                                          schema={{"type":"string"}}
+                                        >
+                                          
+                                        </SchemaItem><SchemaItem
+                                          collapsible={false}
+                                          name={"account_code"}
+                                          required={false}
+                                          schemaName={"string"}
+                                          qualifierMessage={undefined}
+                                          schema={{"type":"string"}}
+                                        >
+                                          
+                                        </SchemaItem><SchemaItem
+                                          collapsible={false}
+                                          name={"sscc_count"}
+                                          required={false}
+                                          schemaName={"integer"}
+                                          qualifierMessage={undefined}
+                                          schema={{"type":"integer"}}
+                                        >
+                                          
+                                        </SchemaItem><SchemaItem
+                                          collapsible={false}
+                                          name={"shipment_count"}
+                                          required={false}
+                                          schemaName={"integer"}
+                                          qualifierMessage={undefined}
+                                          schema={{"type":"integer"}}
+                                        >
+                                          
+                                        </SchemaItem>
+                                      </TabItem><TabItem
+                                        label={"sendle"}
+                                        value={"8-item-properties"}
+                                      >
+                                        <SchemaItem
+                                          collapsible={false}
+                                          name={"sendle_id"}
+                                          required={true}
+                                          schemaName={"string"}
+                                          qualifierMessage={undefined}
+                                          schema={{"type":"string"}}
+                                        >
+                                          
+                                        </SchemaItem><SchemaItem
+                                          collapsible={false}
+                                          name={"api_key"}
+                                          required={true}
+                                          schemaName={"string"}
+                                          qualifierMessage={undefined}
+                                          schema={{"type":"string"}}
+                                        >
+                                          
+                                        </SchemaItem><SchemaItem
+                                          collapsible={false}
+                                          name={"account_country_code"}
+                                          required={false}
+                                          schemaName={"string"}
+                                          qualifierMessage={undefined}
+                                          schema={{"type":"string"}}
+                                        >
+                                          
+                                        </SchemaItem>
+                                      </TabItem><TabItem
+                                        label={"seko"}
+                                        value={"9-item-properties"}
+                                      >
+                                        <SchemaItem
+                                          collapsible={false}
+                                          name={"access_key"}
+                                          required={true}
+                                          schemaName={"string"}
+                                          qualifierMessage={undefined}
+                                          schema={{"type":"string"}}
+                                        >
+                                          
+                                        </SchemaItem>
+                                      </TabItem><TabItem
+                                        label={"sapient"}
+                                        value={"10-item-properties"}
+                                      >
+                                        <SchemaItem
+                                          collapsible={false}
+                                          name={"client_id"}
+                                          required={true}
+                                          schemaName={"string"}
+                                          qualifierMessage={undefined}
+                                          schema={{"type":"string"}}
+                                        >
+                                          
+                                        </SchemaItem><SchemaItem
+                                          collapsible={false}
+                                          name={"client_secret"}
+                                          required={true}
+                                          schemaName={"string"}
+                                          qualifierMessage={undefined}
+                                          schema={{"type":"string"}}
+                                        >
+                                          
+                                        </SchemaItem><SchemaItem
+                                          collapsible={false}
+                                          name={"shipping_account_id"}
+                                          required={true}
+                                          schemaName={"string"}
+                                          qualifierMessage={undefined}
+                                          schema={{"type":"string"}}
+                                        >
+                                          
+                                        </SchemaItem><SchemaItem
+                                          collapsible={false}
+                                          name={"sapient_carrier_code"}
+                                          required={false}
+                                          schemaName={"string"}
+                                          qualifierMessage={"**Possible values:** [`DX`, `EVRI`, `RM`, `UPS`, `YODEL`]"}
+                                          schema={{"enum":["DX","EVRI","RM","UPS","YODEL"],"type":"string","x-spec-enum-id":"24b797aea0df4a45","description":"Indicates a sapient_carrier_code string"}}
+                                        >
+                                          
+                                        </SchemaItem>
+                                      </TabItem><TabItem
+                                        label={"royalmail"}
+                                        value={"11-item-properties"}
+                                      >
+                                        <SchemaItem
+                                          collapsible={false}
+                                          name={"client_id"}
+                                          required={true}
+                                          schemaName={"string"}
+                                          qualifierMessage={undefined}
+                                          schema={{"type":"string"}}
+                                        >
+                                          
+                                        </SchemaItem><SchemaItem
+                                          collapsible={false}
+                                          name={"client_secret"}
+                                          required={true}
+                                          schemaName={"string"}
+                                          qualifierMessage={undefined}
+                                          schema={{"type":"string"}}
+                                        >
+                                          
+                                        </SchemaItem>
+                                      </TabItem><TabItem
+                                        label={"roadie"}
+                                        value={"12-item-properties"}
+                                      >
+                                        <SchemaItem
+                                          collapsible={false}
+                                          name={"api_key"}
+                                          required={true}
+                                          schemaName={"string"}
+                                          qualifierMessage={undefined}
+                                          schema={{"type":"string"}}
+                                        >
+                                          
+                                        </SchemaItem>
+                                      </TabItem><TabItem
+                                        label={"purolator"}
+                                        value={"13-item-properties"}
+                                      >
+                                        <SchemaItem
+                                          collapsible={false}
+                                          name={"username"}
+                                          required={true}
+                                          schemaName={"string"}
+                                          qualifierMessage={undefined}
+                                          schema={{"type":"string"}}
+                                        >
+                                          
+                                        </SchemaItem><SchemaItem
+                                          collapsible={false}
+                                          name={"password"}
+                                          required={true}
+                                          schemaName={"string"}
+                                          qualifierMessage={undefined}
+                                          schema={{"type":"string"}}
+                                        >
+                                          
+                                        </SchemaItem><SchemaItem
+                                          collapsible={false}
+                                          name={"account_number"}
+                                          required={true}
+                                          schemaName={"string"}
+                                          qualifierMessage={undefined}
+                                          schema={{"type":"string"}}
+                                        >
+                                          
+                                        </SchemaItem><SchemaItem
+                                          collapsible={false}
+                                          name={"user_token"}
+                                          required={false}
+                                          schemaName={"string"}
+                                          qualifierMessage={undefined}
+                                          schema={{"type":"string"}}
+                                        >
+                                          
+                                        </SchemaItem><SchemaItem
+                                          collapsible={false}
+                                          name={"language"}
+                                          required={false}
+                                          schemaName={"string"}
+                                          qualifierMessage={"**Possible values:** [`en`, `fr`]"}
+                                          schema={{"enum":["en","fr"],"type":"string","x-spec-enum-id":"e4be23cf445bc4cb","description":"Indicates a language string"}}
+                                        >
+                                          
+                                        </SchemaItem>
+                                      </TabItem><TabItem
+                                        label={"nationex"}
+                                        value={"14-item-properties"}
+                                      >
+                                        <SchemaItem
+                                          collapsible={false}
+                                          name={"api_key"}
+                                          required={true}
+                                          schemaName={"string"}
+                                          qualifierMessage={undefined}
+                                          schema={{"type":"string"}}
+                                        >
+                                          
+                                        </SchemaItem><SchemaItem
+                                          collapsible={false}
+                                          name={"customer_id"}
+                                          required={true}
+                                          schemaName={"string"}
+                                          qualifierMessage={undefined}
+                                          schema={{"type":"string"}}
+                                        >
+                                          
+                                        </SchemaItem><SchemaItem
+                                          collapsible={false}
+                                          name={"billing_account"}
+                                          required={false}
+                                          schemaName={"string"}
+                                          qualifierMessage={undefined}
+                                          schema={{"type":"string"}}
+                                        >
+                                          
+                                        </SchemaItem><SchemaItem
+                                          collapsible={false}
+                                          name={"language"}
+                                          required={false}
+                                          schemaName={"string"}
+                                          qualifierMessage={"**Possible values:** [`en`, `fr`]"}
+                                          schema={{"enum":["en","fr"],"type":"string","x-spec-enum-id":"e4be23cf445bc4cb","description":"Indicates a language string"}}
+                                        >
+                                          
+                                        </SchemaItem>
+                                      </TabItem><TabItem
+                                        label={"locate2u"}
+                                        value={"15-item-properties"}
+                                      >
+                                        <SchemaItem
+                                          collapsible={false}
+                                          name={"client_id"}
+                                          required={false}
+                                          schemaName={"string"}
+                                          qualifierMessage={undefined}
+                                          schema={{"type":"string"}}
+                                        >
+                                          
+                                        </SchemaItem><SchemaItem
+                                          collapsible={false}
+                                          name={"client_secret"}
+                                          required={false}
+                                          schemaName={"string"}
+                                          qualifierMessage={undefined}
+                                          schema={{"type":"string"}}
+                                        >
+                                          
+                                        </SchemaItem>
+                                      </TabItem><TabItem
+                                        label={"laposte"}
+                                        value={"16-item-properties"}
+                                      >
+                                        <SchemaItem
+                                          collapsible={false}
+                                          name={"api_key"}
+                                          required={true}
+                                          schemaName={"string"}
+                                          qualifierMessage={undefined}
+                                          schema={{"type":"string"}}
+                                        >
+                                          
+                                        </SchemaItem><SchemaItem
+                                          collapsible={false}
+                                          name={"lang"}
+                                          required={false}
+                                          schemaName={"string"}
+                                          qualifierMessage={"**Possible values:** [`fr_FR`, `en_US`]"}
+                                          schema={{"enum":["fr_FR","en_US"],"type":"string","x-spec-enum-id":"efa3dd717c7774fb","description":"Indicates a lang string"}}
+                                        >
+                                          
+                                        </SchemaItem>
+                                      </TabItem><TabItem
+                                        label={"hay_post"}
+                                        value={"17-item-properties"}
+                                      >
+                                        <SchemaItem
+                                          collapsible={false}
+                                          name={"username"}
+                                          required={true}
+                                          schemaName={"string"}
+                                          qualifierMessage={undefined}
+                                          schema={{"type":"string"}}
+                                        >
+                                          
+                                        </SchemaItem><SchemaItem
+                                          collapsible={false}
+                                          name={"password"}
+                                          required={true}
+                                          schemaName={"string"}
+                                          qualifierMessage={undefined}
+                                          schema={{"type":"string"}}
+                                        >
+                                          
+                                        </SchemaItem><SchemaItem
+                                          collapsible={false}
+                                          name={"customer_id"}
+                                          required={true}
+                                          schemaName={"string"}
+                                          qualifierMessage={undefined}
+                                          schema={{"type":"string"}}
+                                        >
+                                          
+                                        </SchemaItem><SchemaItem
+                                          collapsible={false}
+                                          name={"customer_type"}
+                                          required={true}
+                                          schemaName={"string"}
+                                          qualifierMessage={undefined}
+                                          schema={{"type":"string"}}
+                                        >
+                                          
+                                        </SchemaItem>
+                                      </TabItem><TabItem
+                                        label={"geodis"}
+                                        value={"18-item-properties"}
+                                      >
+                                        <SchemaItem
+                                          collapsible={false}
+                                          name={"api_key"}
+                                          required={true}
+                                          schemaName={"string"}
+                                          qualifierMessage={undefined}
+                                          schema={{"type":"string"}}
+                                        >
+                                          
+                                        </SchemaItem><SchemaItem
+                                          collapsible={false}
+                                          name={"identifier"}
+                                          required={true}
+                                          schemaName={"string"}
+                                          qualifierMessage={undefined}
+                                          schema={{"type":"string"}}
+                                        >
+                                          
+                                        </SchemaItem><SchemaItem
+                                          collapsible={false}
+                                          name={"code_client"}
+                                          required={false}
+                                          schemaName={"string"}
+                                          qualifierMessage={undefined}
+                                          schema={{"type":"string"}}
+                                        >
+                                          
+                                        </SchemaItem><SchemaItem
+                                          collapsible={false}
+                                          name={"language"}
+                                          required={false}
+                                          schemaName={"string"}
+                                          qualifierMessage={"**Possible values:** [`fr`, `en`]"}
+                                          schema={{"enum":["fr","en"],"type":"string","x-spec-enum-id":"658b2ddeb0ffc173","description":"Indicates a language string"}}
+                                        >
+                                          
+                                        </SchemaItem>
+                                      </TabItem><TabItem
+                                        label={"generic"}
+                                        value={"19-item-properties"}
+                                      >
+                                        <SchemaItem
+                                          collapsible={false}
+                                          name={"display_name"}
+                                          required={true}
+                                          schemaName={"string"}
+                                          qualifierMessage={undefined}
+                                          schema={{"type":"string"}}
+                                        >
+                                          
+                                        </SchemaItem><SchemaItem
+                                          collapsible={false}
+                                          name={"custom_carrier_name"}
+                                          required={true}
+                                          schemaName={"string"}
+                                          qualifierMessage={undefined}
+                                          schema={{"type":"string"}}
+                                        >
+                                          
+                                        </SchemaItem><SchemaItem
+                                          collapsible={false}
+                                          name={"account_country_code"}
+                                          required={false}
+                                          schemaName={"string"}
+                                          qualifierMessage={undefined}
+                                          schema={{"type":"string"}}
+                                        >
+                                          
+                                        </SchemaItem><SchemaItem
+                                          collapsible={false}
+                                          name={"account_number"}
+                                          required={false}
+                                          schemaName={"string"}
+                                          qualifierMessage={undefined}
+                                          schema={{"type":"string"}}
+                                        >
+                                          
+                                        </SchemaItem>
+                                      </TabItem><TabItem
+                                        label={"freightcom"}
+                                        value={"20-item-properties"}
+                                      >
+                                        <SchemaItem
+                                          collapsible={false}
+                                          name={"username"}
+                                          required={true}
+                                          schemaName={"string"}
+                                          qualifierMessage={undefined}
+                                          schema={{"type":"string"}}
+                                        >
+                                          
+                                        </SchemaItem><SchemaItem
+                                          collapsible={false}
+                                          name={"password"}
+                                          required={true}
+                                          schemaName={"string"}
+                                          qualifierMessage={undefined}
+                                          schema={{"type":"string"}}
+                                        >
+                                          
+                                        </SchemaItem>
+                                      </TabItem><TabItem
+                                        label={"fedex_ws"}
+                                        value={"21-item-properties"}
+                                      >
+                                        <SchemaItem
+                                          collapsible={false}
+                                          name={"password"}
+                                          required={true}
+                                          schemaName={"string"}
+                                          qualifierMessage={undefined}
+                                          schema={{"type":"string"}}
+                                        >
+                                          
+                                        </SchemaItem><SchemaItem
+                                          collapsible={false}
+                                          name={"meter_number"}
+                                          required={true}
+                                          schemaName={"string"}
+                                          qualifierMessage={undefined}
+                                          schema={{"type":"string"}}
+                                        >
+                                          
+                                        </SchemaItem><SchemaItem
+                                          collapsible={false}
+                                          name={"account_number"}
+                                          required={true}
+                                          schemaName={"string"}
+                                          qualifierMessage={undefined}
+                                          schema={{"type":"string"}}
+                                        >
+                                          
+                                        </SchemaItem><SchemaItem
+                                          collapsible={false}
+                                          name={"user_key"}
+                                          required={false}
+                                          schemaName={"string"}
+                                          qualifierMessage={undefined}
+                                          schema={{"type":"string"}}
+                                        >
+                                          
+                                        </SchemaItem><SchemaItem
+                                          collapsible={false}
+                                          name={"language_code"}
+                                          required={false}
+                                          schemaName={"string"}
+                                          qualifierMessage={undefined}
+                                          schema={{"type":"string","default":"en"}}
+                                        >
+                                          
+                                        </SchemaItem><SchemaItem
+                                          collapsible={false}
+                                          name={"account_country_code"}
+                                          required={false}
+                                          schemaName={"string"}
+                                          qualifierMessage={undefined}
+                                          schema={{"type":"string"}}
+                                        >
+                                          
+                                        </SchemaItem>
+                                      </TabItem><TabItem
+                                        label={"fedex"}
+                                        value={"22-item-properties"}
+                                      >
+                                        <SchemaItem
+                                          collapsible={false}
+                                          name={"api_key"}
+                                          required={false}
+                                          schemaName={"string"}
+                                          qualifierMessage={undefined}
+                                          schema={{"type":"string"}}
+                                        >
+                                          
+                                        </SchemaItem><SchemaItem
+                                          collapsible={false}
+                                          name={"secret_key"}
+                                          required={false}
+                                          schemaName={"string"}
+                                          qualifierMessage={undefined}
+                                          schema={{"type":"string"}}
+                                        >
+                                          
+                                        </SchemaItem><SchemaItem
+                                          collapsible={false}
+                                          name={"account_number"}
+                                          required={false}
+                                          schemaName={"string"}
+                                          qualifierMessage={undefined}
+                                          schema={{"type":"string"}}
+                                        >
+                                          
+                                        </SchemaItem><SchemaItem
+                                          collapsible={false}
+                                          name={"track_api_key"}
+                                          required={false}
+                                          schemaName={"string"}
+                                          qualifierMessage={undefined}
+                                          schema={{"type":"string"}}
+                                        >
+                                          
+                                        </SchemaItem><SchemaItem
+                                          collapsible={false}
+                                          name={"track_secret_key"}
+                                          required={false}
+                                          schemaName={"string"}
+                                          qualifierMessage={undefined}
+                                          schema={{"type":"string"}}
+                                        >
+                                          
+                                        </SchemaItem><SchemaItem
+                                          collapsible={false}
+                                          name={"account_country_code"}
+                                          required={false}
+                                          schemaName={"string"}
+                                          qualifierMessage={undefined}
+                                          schema={{"type":"string"}}
+                                        >
+                                          
+                                        </SchemaItem>
+                                      </TabItem><TabItem
+                                        label={"eshipper"}
+                                        value={"23-item-properties"}
+                                      >
+                                        <SchemaItem
+                                          collapsible={false}
+                                          name={"principal"}
+                                          required={true}
+                                          schemaName={"string"}
+                                          qualifierMessage={undefined}
+                                          schema={{"type":"string"}}
+                                        >
+                                          
+                                        </SchemaItem><SchemaItem
+                                          collapsible={false}
+                                          name={"credential"}
+                                          required={true}
+                                          schemaName={"string"}
+                                          qualifierMessage={undefined}
+                                          schema={{"type":"string"}}
+                                        >
+                                          
+                                        </SchemaItem>
+                                      </TabItem><TabItem
+                                        label={"easyship"}
+                                        value={"24-item-properties"}
+                                      >
+                                        <SchemaItem
+                                          collapsible={false}
+                                          name={"access_token"}
+                                          required={true}
+                                          schemaName={"string"}
+                                          qualifierMessage={undefined}
+                                          schema={{"type":"string"}}
+                                        >
+                                          
+                                        </SchemaItem>
+                                      </TabItem><TabItem
+                                        label={"easypost"}
+                                        value={"25-item-properties"}
+                                      >
+                                        <SchemaItem
+                                          collapsible={false}
+                                          name={"api_key"}
+                                          required={true}
+                                          schemaName={"string"}
+                                          qualifierMessage={undefined}
+                                          schema={{"type":"string"}}
+                                        >
+                                          
+                                        </SchemaItem>
+                                      </TabItem><TabItem
+                                        label={"dpdhl"}
+                                        value={"26-item-properties"}
+                                      >
+                                        <SchemaItem
+                                          collapsible={false}
+                                          name={"username"}
+                                          required={true}
+                                          schemaName={"string"}
+                                          qualifierMessage={undefined}
+                                          schema={{"type":"string"}}
+                                        >
+                                          
+                                        </SchemaItem><SchemaItem
+                                          collapsible={false}
+                                          name={"password"}
+                                          required={true}
+                                          schemaName={"string"}
+                                          qualifierMessage={undefined}
+                                          schema={{"type":"string"}}
+                                        >
+                                          
+                                        </SchemaItem><SchemaItem
+                                          collapsible={false}
+                                          name={"app_id"}
+                                          required={false}
+                                          schemaName={"string"}
+                                          qualifierMessage={undefined}
+                                          schema={{"type":"string"}}
+                                        >
+                                          
+                                        </SchemaItem><SchemaItem
+                                          collapsible={false}
+                                          name={"app_token"}
+                                          required={false}
+                                          schemaName={"string"}
+                                          qualifierMessage={undefined}
+                                          schema={{"type":"string"}}
+                                        >
+                                          
+                                        </SchemaItem><SchemaItem
+                                          collapsible={false}
+                                          name={"zt_id"}
+                                          required={false}
+                                          schemaName={"string"}
+                                          qualifierMessage={undefined}
+                                          schema={{"type":"string"}}
+                                        >
+                                          
+                                        </SchemaItem><SchemaItem
+                                          collapsible={false}
+                                          name={"zt_password"}
+                                          required={false}
+                                          schemaName={"string"}
+                                          qualifierMessage={undefined}
+                                          schema={{"type":"string"}}
+                                        >
+                                          
+                                        </SchemaItem><SchemaItem
+                                          collapsible={false}
+                                          name={"account_number"}
+                                          required={false}
+                                          schemaName={"string"}
+                                          qualifierMessage={undefined}
+                                          schema={{"type":"string"}}
+                                        >
+                                          
+                                        </SchemaItem>
+                                      </TabItem><TabItem
+                                        label={"dpd"}
+                                        value={"27-item-properties"}
+                                      >
+                                        <SchemaItem
+                                          collapsible={false}
+                                          name={"delis_id"}
+                                          required={true}
+                                          schemaName={"string"}
+                                          qualifierMessage={undefined}
+                                          schema={{"type":"string"}}
+                                        >
+                                          
+                                        </SchemaItem><SchemaItem
+                                          collapsible={false}
+                                          name={"password"}
+                                          required={true}
+                                          schemaName={"string"}
+                                          qualifierMessage={undefined}
+                                          schema={{"type":"string"}}
+                                        >
+                                          
+                                        </SchemaItem><SchemaItem
+                                          collapsible={false}
+                                          name={"depot"}
+                                          required={false}
+                                          schemaName={"string"}
+                                          qualifierMessage={undefined}
+                                          schema={{"type":"string"}}
+                                        >
+                                          
+                                        </SchemaItem><SchemaItem
+                                          collapsible={false}
+                                          name={"message_language"}
+                                          required={false}
+                                          schemaName={"string"}
+                                          qualifierMessage={undefined}
+                                          schema={{"type":"string","default":"en_EN"}}
+                                        >
+                                          
+                                        </SchemaItem><SchemaItem
+                                          collapsible={false}
+                                          name={"account_country_code"}
+                                          required={false}
+                                          schemaName={"string"}
+                                          qualifierMessage={undefined}
+                                          schema={{"type":"string","default":"BE"}}
+                                        >
+                                          
+                                        </SchemaItem>
+                                      </TabItem><TabItem
+                                        label={"dicom"}
+                                        value={"28-item-properties"}
+                                      >
+                                        <SchemaItem
+                                          collapsible={false}
+                                          name={"username"}
+                                          required={true}
+                                          schemaName={"string"}
+                                          qualifierMessage={undefined}
+                                          schema={{"type":"string"}}
+                                        >
+                                          
+                                        </SchemaItem><SchemaItem
+                                          collapsible={false}
+                                          name={"password"}
+                                          required={true}
+                                          schemaName={"string"}
+                                          qualifierMessage={undefined}
+                                          schema={{"type":"string"}}
+                                        >
+                                          
+                                        </SchemaItem><SchemaItem
+                                          collapsible={false}
+                                          name={"billing_account"}
+                                          required={false}
+                                          schemaName={"string"}
+                                          qualifierMessage={undefined}
+                                          schema={{"type":"string"}}
+                                        >
+                                          
+                                        </SchemaItem>
+                                      </TabItem><TabItem
+                                        label={"dhl_universal"}
+                                        value={"29-item-properties"}
+                                      >
+                                        <SchemaItem
+                                          collapsible={false}
+                                          name={"consumer_key"}
+                                          required={true}
+                                          schemaName={"string"}
+                                          qualifierMessage={undefined}
+                                          schema={{"type":"string"}}
+                                        >
+                                          
+                                        </SchemaItem><SchemaItem
+                                          collapsible={false}
+                                          name={"consumer_secret"}
+                                          required={true}
+                                          schemaName={"string"}
+                                          qualifierMessage={undefined}
+                                          schema={{"type":"string"}}
+                                        >
+                                          
+                                        </SchemaItem><SchemaItem
+                                          collapsible={false}
+                                          name={"language"}
+                                          required={false}
+                                          schemaName={"string"}
+                                          qualifierMessage={"**Possible values:** [`en`, `de`]"}
+                                          schema={{"enum":["en","de"],"type":"string","x-spec-enum-id":"c8ebf97e9150e311","description":"Indicates a language string"}}
+                                        >
+                                          
+                                        </SchemaItem>
+                                      </TabItem><TabItem
+                                        label={"dhl_poland"}
+                                        value={"30-item-properties"}
+                                      >
+                                        <SchemaItem
+                                          collapsible={false}
+                                          name={"username"}
+                                          required={true}
+                                          schemaName={"string"}
+                                          qualifierMessage={undefined}
+                                          schema={{"type":"string"}}
+                                        >
+                                          
+                                        </SchemaItem><SchemaItem
+                                          collapsible={false}
+                                          name={"password"}
+                                          required={true}
+                                          schemaName={"string"}
+                                          qualifierMessage={undefined}
+                                          schema={{"type":"string"}}
+                                        >
+                                          
+                                        </SchemaItem><SchemaItem
+                                          collapsible={false}
+                                          name={"account_number"}
+                                          required={false}
+                                          schemaName={"string"}
+                                          qualifierMessage={undefined}
+                                          schema={{"type":"string"}}
+                                        >
+                                          
+                                        </SchemaItem>
+                                      </TabItem><TabItem
+                                        label={"dhl_parcel_de"}
+                                        value={"31-item-properties"}
+                                      >
+                                        <SchemaItem
+                                          collapsible={false}
+                                          name={"username"}
+                                          required={true}
+                                          schemaName={"string"}
+                                          qualifierMessage={undefined}
+                                          schema={{"type":"string"}}
+                                        >
+                                          
+                                        </SchemaItem><SchemaItem
+                                          collapsible={false}
+                                          name={"password"}
+                                          required={true}
+                                          schemaName={"string"}
+                                          qualifierMessage={undefined}
+                                          schema={{"type":"string"}}
+                                        >
+                                          
+                                        </SchemaItem><SchemaItem
+                                          collapsible={false}
+                                          name={"dhl_api_key"}
+                                          required={true}
+                                          schemaName={"string"}
+                                          qualifierMessage={undefined}
+                                          schema={{"type":"string"}}
+                                        >
+                                          
+                                        </SchemaItem><SchemaItem
+                                          collapsible={false}
+                                          name={"customer_number"}
+                                          required={false}
+                                          schemaName={"string"}
+                                          qualifierMessage={undefined}
+                                          schema={{"type":"string"}}
+                                        >
+                                          
+                                        </SchemaItem><SchemaItem
+                                          collapsible={false}
+                                          name={"tracking_consumer_key"}
+                                          required={false}
+                                          schemaName={"string"}
+                                          qualifierMessage={undefined}
+                                          schema={{"type":"string"}}
+                                        >
+                                          
+                                        </SchemaItem><SchemaItem
+                                          collapsible={false}
+                                          name={"tracking_consumer_secret"}
+                                          required={false}
+                                          schemaName={"string"}
+                                          qualifierMessage={undefined}
+                                          schema={{"type":"string"}}
+                                        >
+                                          
+                                        </SchemaItem>
+                                      </TabItem><TabItem
+                                        label={"dhl_express"}
+                                        value={"32-item-properties"}
+                                      >
+                                        <SchemaItem
+                                          collapsible={false}
+                                          name={"site_id"}
+                                          required={true}
+                                          schemaName={"string"}
+                                          qualifierMessage={undefined}
+                                          schema={{"type":"string"}}
+                                        >
+                                          
+                                        </SchemaItem><SchemaItem
+                                          collapsible={false}
+                                          name={"password"}
+                                          required={true}
+                                          schemaName={"string"}
+                                          qualifierMessage={undefined}
+                                          schema={{"type":"string"}}
+                                        >
+                                          
+                                        </SchemaItem><SchemaItem
+                                          collapsible={false}
+                                          name={"account_number"}
+                                          required={false}
+                                          schemaName={"string"}
+                                          qualifierMessage={undefined}
+                                          schema={{"type":"string"}}
+                                        >
+                                          
+                                        </SchemaItem><SchemaItem
+                                          collapsible={false}
+                                          name={"account_country_code"}
+                                          required={false}
+                                          schemaName={"string"}
+                                          qualifierMessage={undefined}
+                                          schema={{"type":"string"}}
+                                        >
+                                          
+                                        </SchemaItem>
+                                      </TabItem><TabItem
+                                        label={"colissimo"}
+                                        value={"33-item-properties"}
+                                      >
+                                        <SchemaItem
+                                          collapsible={false}
+                                          name={"password"}
+                                          required={true}
+                                          schemaName={"string"}
+                                          qualifierMessage={undefined}
+                                          schema={{"type":"string"}}
+                                        >
+                                          
+                                        </SchemaItem><SchemaItem
+                                          collapsible={false}
+                                          name={"contract_number"}
+                                          required={true}
+                                          schemaName={"string"}
+                                          qualifierMessage={undefined}
+                                          schema={{"type":"string"}}
+                                        >
+                                          
+                                        </SchemaItem><SchemaItem
+                                          collapsible={false}
+                                          name={"laposte_api_key"}
+                                          required={false}
+                                          schemaName={"string"}
+                                          qualifierMessage={undefined}
+                                          schema={{"type":"string"}}
+                                        >
+                                          
+                                        </SchemaItem>
+                                      </TabItem><TabItem
+                                        label={"chronopost"}
+                                        value={"34-item-properties"}
+                                      >
+                                        <SchemaItem
+                                          collapsible={false}
+                                          name={"account_number"}
+                                          required={true}
+                                          schemaName={"string"}
+                                          qualifierMessage={undefined}
+                                          schema={{"type":"string"}}
+                                        >
+                                          
+                                        </SchemaItem><SchemaItem
+                                          collapsible={false}
+                                          name={"password"}
+                                          required={true}
+                                          schemaName={"string"}
+                                          qualifierMessage={undefined}
+                                          schema={{"type":"string"}}
+                                        >
+                                          
+                                        </SchemaItem><SchemaItem
+                                          collapsible={false}
+                                          name={"id_emit"}
+                                          required={false}
+                                          schemaName={"string"}
+                                          qualifierMessage={undefined}
+                                          schema={{"type":"string","default":"CHRFR"}}
+                                        >
+                                          
+                                        </SchemaItem><SchemaItem
+                                          collapsible={false}
+                                          name={"language"}
+                                          required={false}
+                                          schemaName={"string"}
+                                          qualifierMessage={"**Possible values:** [`en_GB`, `fr_FR`]"}
+                                          schema={{"enum":["en_GB","fr_FR"],"type":"string","x-spec-enum-id":"497f777dd9f49678","description":"Indicates a language string"}}
+                                        >
+                                          
+                                        </SchemaItem>
+                                      </TabItem><TabItem
+                                        label={"canpar"}
+                                        value={"35-item-properties"}
+                                      >
+                                        <SchemaItem
+                                          collapsible={false}
+                                          name={"username"}
+                                          required={true}
+                                          schemaName={"string"}
+                                          qualifierMessage={undefined}
+                                          schema={{"type":"string"}}
+                                        >
+                                          
+                                        </SchemaItem><SchemaItem
+                                          collapsible={false}
+                                          name={"password"}
+                                          required={true}
+                                          schemaName={"string"}
+                                          qualifierMessage={undefined}
+                                          schema={{"type":"string"}}
+                                        >
+                                          
+                                        </SchemaItem><SchemaItem
+                                          collapsible={false}
+                                          name={"language"}
+                                          required={false}
+                                          schemaName={"string"}
+                                          qualifierMessage={"**Possible values:** [`en`, `fr`]"}
+                                          schema={{"enum":["en","fr"],"type":"string","x-spec-enum-id":"e4be23cf445bc4cb","description":"Indicates a language string"}}
+                                        >
+                                          
+                                        </SchemaItem>
+                                      </TabItem><TabItem
+                                        label={"canadapost"}
+                                        value={"36-item-properties"}
+                                      >
+                                        <SchemaItem
+                                          collapsible={false}
+                                          name={"username"}
+                                          required={true}
+                                          schemaName={"string"}
+                                          qualifierMessage={undefined}
+                                          schema={{"type":"string"}}
+                                        >
+                                          
+                                        </SchemaItem><SchemaItem
+                                          collapsible={false}
+                                          name={"password"}
+                                          required={true}
+                                          schemaName={"string"}
+                                          qualifierMessage={undefined}
+                                          schema={{"type":"string"}}
+                                        >
+                                          
+                                        </SchemaItem><SchemaItem
+                                          collapsible={false}
+                                          name={"customer_number"}
+                                          required={false}
+                                          schemaName={"string"}
+                                          qualifierMessage={undefined}
+                                          schema={{"type":"string"}}
+                                        >
+                                          
+                                        </SchemaItem><SchemaItem
+                                          collapsible={false}
+                                          name={"contract_id"}
+                                          required={false}
+                                          schemaName={"string"}
+                                          qualifierMessage={undefined}
+                                          schema={{"type":"string"}}
+                                        >
+                                          
+                                        </SchemaItem><SchemaItem
+                                          collapsible={false}
+                                          name={"language"}
+                                          required={false}
+                                          schemaName={"string"}
+                                          qualifierMessage={"**Possible values:** [`en`, `fr`]"}
+                                          schema={{"enum":["en","fr"],"type":"string","x-spec-enum-id":"e4be23cf445bc4cb","description":"Indicates a language string"}}
+                                        >
+                                          
+                                        </SchemaItem>
+                                      </TabItem><TabItem
+                                        label={"bpost"}
+                                        value={"37-item-properties"}
+                                      >
+                                        <SchemaItem
+                                          collapsible={false}
+                                          name={"account_id"}
+                                          required={true}
+                                          schemaName={"string"}
+                                          qualifierMessage={undefined}
+                                          schema={{"type":"string"}}
+                                        >
+                                          
+                                        </SchemaItem><SchemaItem
+                                          collapsible={false}
+                                          name={"passphrase"}
+                                          required={true}
+                                          schemaName={"string"}
+                                          qualifierMessage={undefined}
+                                          schema={{"type":"string"}}
+                                        >
+                                          
+                                        </SchemaItem>
+                                      </TabItem><TabItem
+                                        label={"boxknight"}
+                                        value={"38-item-properties"}
+                                      >
+                                        <SchemaItem
+                                          collapsible={false}
+                                          name={"username"}
+                                          required={true}
+                                          schemaName={"string"}
+                                          qualifierMessage={undefined}
+                                          schema={{"type":"string"}}
+                                        >
+                                          
+                                        </SchemaItem><SchemaItem
+                                          collapsible={false}
+                                          name={"password"}
+                                          required={true}
+                                          schemaName={"string"}
+                                          qualifierMessage={undefined}
+                                          schema={{"type":"string"}}
+                                        >
+                                          
+                                        </SchemaItem>
+                                      </TabItem><TabItem
+                                        label={"australiapost"}
+                                        value={"39-item-properties"}
+                                      >
+                                        <SchemaItem
+                                          collapsible={false}
+                                          name={"api_key"}
+                                          required={true}
+                                          schemaName={"string"}
+                                          qualifierMessage={undefined}
+                                          schema={{"type":"string"}}
+                                        >
+                                          
+                                        </SchemaItem><SchemaItem
+                                          collapsible={false}
+                                          name={"password"}
+                                          required={true}
+                                          schemaName={"string"}
+                                          qualifierMessage={undefined}
+                                          schema={{"type":"string"}}
+                                        >
+                                          
+                                        </SchemaItem><SchemaItem
+                                          collapsible={false}
+                                          name={"account_number"}
+                                          required={true}
+                                          schemaName={"string"}
+                                          qualifierMessage={undefined}
+                                          schema={{"type":"string"}}
+                                        >
+                                          
+                                        </SchemaItem>
+                                      </TabItem><TabItem
+                                        label={"asendia_us"}
+                                        value={"40-item-properties"}
+                                      >
+                                        <SchemaItem
+                                          collapsible={false}
+                                          name={"username"}
+                                          required={true}
+                                          schemaName={"string"}
+                                          qualifierMessage={undefined}
+                                          schema={{"type":"string"}}
+                                        >
+                                          
+                                        </SchemaItem><SchemaItem
+                                          collapsible={false}
+                                          name={"password"}
+                                          required={true}
+                                          schemaName={"string"}
+                                          qualifierMessage={undefined}
+                                          schema={{"type":"string"}}
+                                        >
+                                          
+                                        </SchemaItem><SchemaItem
+                                          collapsible={false}
+                                          name={"api_key"}
+                                          required={true}
+                                          schemaName={"string"}
+                                          qualifierMessage={undefined}
+                                          schema={{"type":"string"}}
+                                        >
+                                          
+                                        </SchemaItem><SchemaItem
+                                          collapsible={false}
+                                          name={"account_number"}
+                                          required={false}
+                                          schemaName={"string"}
+                                          qualifierMessage={undefined}
+                                          schema={{"type":"string"}}
+                                        >
+                                          
+                                        </SchemaItem>
+                                      </TabItem><TabItem
+                                        label={"aramex"}
+                                        value={"41-item-properties"}
+                                      >
+                                        <SchemaItem
+                                          collapsible={false}
+                                          name={"username"}
+                                          required={true}
+                                          schemaName={"string"}
+                                          qualifierMessage={undefined}
+                                          schema={{"type":"string"}}
+                                        >
+                                          
+                                        </SchemaItem><SchemaItem
+                                          collapsible={false}
+                                          name={"password"}
+                                          required={true}
+                                          schemaName={"string"}
+                                          qualifierMessage={undefined}
+                                          schema={{"type":"string"}}
+                                        >
+                                          
+                                        </SchemaItem><SchemaItem
+                                          collapsible={false}
+                                          name={"account_pin"}
+                                          required={true}
+                                          schemaName={"string"}
+                                          qualifierMessage={undefined}
+                                          schema={{"type":"string"}}
+                                        >
+                                          
+                                        </SchemaItem><SchemaItem
+                                          collapsible={false}
+                                          name={"account_entity"}
+                                          required={true}
+                                          schemaName={"string"}
+                                          qualifierMessage={undefined}
+                                          schema={{"type":"string"}}
+                                        >
+                                          
+                                        </SchemaItem><SchemaItem
+                                          collapsible={false}
+                                          name={"account_number"}
+                                          required={true}
+                                          schemaName={"string"}
+                                          qualifierMessage={undefined}
+                                          schema={{"type":"string"}}
+                                        >
+                                          
+                                        </SchemaItem><SchemaItem
+                                          collapsible={false}
+                                          name={"account_country_code"}
+                                          required={true}
+                                          schemaName={"string"}
+                                          qualifierMessage={undefined}
+                                          schema={{"type":"string"}}
+                                        >
+                                          
+                                        </SchemaItem>
+                                      </TabItem><TabItem
+                                        label={"amazon_shipping"}
+                                        value={"42-item-properties"}
+                                      >
+                                        <SchemaItem
+                                          collapsible={false}
+                                          name={"seller_id"}
+                                          required={true}
+                                          schemaName={"string"}
+                                          qualifierMessage={undefined}
+                                          schema={{"type":"string"}}
+                                        >
+                                          
+                                        </SchemaItem><SchemaItem
+                                          collapsible={false}
+                                          name={"developer_id"}
+                                          required={true}
+                                          schemaName={"string"}
+                                          qualifierMessage={undefined}
+                                          schema={{"type":"string"}}
+                                        >
+                                          
+                                        </SchemaItem><SchemaItem
+                                          collapsible={false}
+                                          name={"mws_auth_token"}
+                                          required={true}
+                                          schemaName={"string"}
+                                          qualifierMessage={undefined}
+                                          schema={{"type":"string"}}
+                                        >
+                                          
+                                        </SchemaItem><SchemaItem
+                                          collapsible={false}
+                                          name={"aws_region"}
+                                          required={false}
+                                          schemaName={"string"}
+                                          qualifierMessage={undefined}
+                                          schema={{"type":"string","default":"us-east-1"}}
+                                        >
+                                          
+                                        </SchemaItem><SchemaItem
+                                          collapsible={false}
+                                          name={"account_country_code"}
+                                          required={false}
+                                          schemaName={"string"}
+                                          qualifierMessage={undefined}
+                                          schema={{"type":"string"}}
+                                        >
+                                          
+                                        </SchemaItem>
+                                      </TabItem><TabItem
+                                        label={"allied_express_local"}
+                                        value={"43-item-properties"}
+                                      >
+                                        <SchemaItem
+                                          collapsible={false}
+                                          name={"username"}
+                                          required={true}
+                                          schemaName={"string"}
+                                          qualifierMessage={undefined}
+                                          schema={{"type":"string"}}
+                                        >
+                                          
+                                        </SchemaItem><SchemaItem
+                                          collapsible={false}
+                                          name={"password"}
+                                          required={true}
+                                          schemaName={"string"}
+                                          qualifierMessage={undefined}
+                                          schema={{"type":"string"}}
+                                        >
+                                          
+                                        </SchemaItem><SchemaItem
+                                          collapsible={false}
+                                          name={"account"}
+                                          required={false}
+                                          schemaName={"string"}
+                                          qualifierMessage={undefined}
+                                          schema={{"type":"string"}}
+                                        >
+                                          
+                                        </SchemaItem><SchemaItem
+                                          collapsible={false}
+                                          name={"service_type"}
+                                          required={false}
+                                          schemaName={"string"}
+                                          qualifierMessage={"**Possible values:** [`R`, `P`, `PT`, `PT2`]"}
+                                          schema={{"enum":["R","P","PT","PT2"],"type":"string","x-spec-enum-id":"4c9d20aef483fdb4","description":"Indicates a service_type string"}}
+                                        >
+                                          
+                                        </SchemaItem>
+                                      </TabItem><TabItem
+                                        label={"allied_express"}
+                                        value={"44-item-properties"}
+                                      >
+                                        <SchemaItem
+                                          collapsible={false}
+                                          name={"username"}
+                                          required={true}
+                                          schemaName={"string"}
+                                          qualifierMessage={undefined}
+                                          schema={{"type":"string"}}
+                                        >
+                                          
+                                        </SchemaItem><SchemaItem
+                                          collapsible={false}
+                                          name={"password"}
+                                          required={true}
+                                          schemaName={"string"}
+                                          qualifierMessage={undefined}
+                                          schema={{"type":"string"}}
+                                        >
+                                          
+                                        </SchemaItem><SchemaItem
+                                          collapsible={false}
+                                          name={"account"}
+                                          required={false}
+                                          schemaName={"string"}
+                                          qualifierMessage={undefined}
+                                          schema={{"type":"string"}}
+                                        >
+                                          
+                                        </SchemaItem><SchemaItem
+                                          collapsible={false}
+                                          name={"service_type"}
+                                          required={false}
+                                          schemaName={"string"}
+                                          qualifierMessage={"**Possible values:** [`R`, `P`, `PT`, `PT2`]"}
+                                          schema={{"enum":["R","P","PT","PT2"],"type":"string","x-spec-enum-id":"4c9d20aef483fdb4","description":"Indicates a service_type string"}}
+                                        >
+                                          
+                                        </SchemaItem>
+                                      </TabItem>
+                                    </SchemaTabs>
+                                  </div>
+                                </div>
+                              </details>
+                            </SchemaItem><SchemaItem
+                              collapsible={false}
+                              name={"capabilities"}
+                              required={false}
+                              schemaName={"string[]"}
+                              qualifierMessage={undefined}
+                              schema={{"type":"array","items":{"type":"string"},"nullable":true,"description":"The carrier enabled capabilities."}}
+                            >
+                              
+                            </SchemaItem><SchemaItem
+                              collapsible={true}
+                              className={"schemaItem"}
+                            >
+                              <details
+                                style={{}}
+                                className={"openapi-markdown__details"}
+                              >
+                                <summary
+                                  style={{}}
+                                >
+                                  <span
+                                    className={"openapi-schema__container"}
+                                  >
+                                    <strong
+                                      className={"openapi-schema__property"}
+                                    >
+                                      config
+                                    </strong><span
+                                      className={"openapi-schema__name"}
+                                    >
+                                       object
+                                    </span>
+                                  </span>
+                                </summary><div
+                                  style={{"marginLeft":"1rem"}}
+                                >
+                                  <div
+                                    style={{"marginTop":".5rem","marginBottom":".5rem"}}
+                                  >
+                                    
+                                    
+                                    Carrier connection custom config.
+                                    
+                                    
+                                  </div><SchemaItem
+                                    name={"property name*"}
+                                    required={false}
+                                    schemaName={"any"}
+                                    qualifierMessage={undefined}
+                                    schema={{"type":"object","additionalProperties":{},"default":{},"description":"Carrier connection custom config."}}
+                                    collapsible={false}
+                                    discriminator={false}
+                                  >
+                                    
+                                  </SchemaItem>
+                                </div>
+                              </details>
+                            </SchemaItem><SchemaItem
+                              collapsible={true}
+                              className={"schemaItem"}
+                            >
+                              <details
+                                style={{}}
+                                className={"openapi-markdown__details"}
+                              >
+                                <summary
+                                  style={{}}
+                                >
+                                  <span
+                                    className={"openapi-schema__container"}
+                                  >
+                                    <strong
+                                      className={"openapi-schema__property"}
+                                    >
+                                      metadata
+                                    </strong><span
+                                      className={"openapi-schema__name"}
+                                    >
+                                       object
+                                    </span>
+                                  </span>
+                                </summary><div
+                                  style={{"marginLeft":"1rem"}}
+                                >
+                                  <div
+                                    style={{"marginTop":".5rem","marginBottom":".5rem"}}
+                                  >
+                                    
+                                    
+                                    User metadata for the carrier.
+                                    
+                                    
+                                  </div><SchemaItem
+                                    name={"property name*"}
+                                    required={false}
+                                    schemaName={"any"}
+                                    qualifierMessage={undefined}
+                                    schema={{"type":"object","additionalProperties":{},"default":{},"description":"User metadata for the carrier."}}
+                                    collapsible={false}
+                                    discriminator={false}
+                                  >
+                                    
+                                  </SchemaItem>
+                                </div>
+                              </details>
+                            </SchemaItem><SchemaItem
+                              collapsible={false}
+                              name={"is_system"}
+                              required={true}
+                              schemaName={"boolean"}
+                              qualifierMessage={undefined}
+                              schema={{"type":"boolean","description":"The carrier connection is provided by the system admin."}}
+                            >
+                              
+                            </SchemaItem><SchemaItem
+                              collapsible={false}
+                              name={"active"}
+                              required={true}
+                              schemaName={"boolean"}
+                              qualifierMessage={undefined}
+                              schema={{"type":"boolean","description":"The active flag indicates whether the carrier account is active or not."}}
+                            >
+                              
+                            </SchemaItem><SchemaItem
+                              collapsible={false}
+                              name={"test_mode"}
+                              required={true}
+                              schemaName={"boolean"}
+                              qualifierMessage={undefined}
+                              schema={{"type":"boolean","description":"The test flag indicates whether to use a carrier configured for test."}}
+                            >
+                              
+                            </SchemaItem><li>
+                              <div
+                                style={{"fontSize":"var(--ifm-code-font-size)","opacity":"0.6","marginLeft":"-.5rem"}}
+                              >
+                                ]
+                              </div>
+                            </li>
+                          </div>
+                        </details>
+                      </SchemaItem>
+                    </ul>
+                  </details>
+                </TabItem><TabItem
+                  label={"Example (from schema)"}
+                  value={"Example (from schema)"}
+                >
+                  <ResponseSamples
+                    responseExample={"{\n  \"count\": 0,\n  \"next\": \"string\",\n  \"previous\": \"string\",\n  \"results\": [\n    {\n      \"id\": \"string\",\n      \"object_type\": \"carrier-connection\",\n      \"carrier_name\": \"allied_express\",\n      \"display_name\": \"string\",\n      \"carrier_id\": \"string\",\n      \"credentials\": {\n        \"api_key\": \"string\"\n      },\n      \"capabilities\": [\n        \"string\"\n      ],\n      \"config\": {},\n      \"metadata\": {},\n      \"is_system\": true,\n      \"active\": true,\n      \"test_mode\": true\n    }\n  ]\n}"}
+                    language={"json"}
+                  >
+                    
+                  </ResponseSamples>
+                </TabItem>
+              </SchemaTabs>
+            </TabItem>
+          </MimeTabs>
+        </div>
+      </TabItem><TabItem
+        label={"400"}
+        value={"400"}
+      >
+        <div>
+          
+          
+          
+          
+          
+        </div><div>
+          <MimeTabs
+            className={"openapi-tabs__mime"}
+            schemaType={"response"}
+          >
+            <TabItem
+              label={"application/json"}
+              value={"application/json"}
+            >
+              <SchemaTabs
+                className={"openapi-tabs__schema"}
+              >
+                <TabItem
+                  label={"Schema"}
+                  value={"Schema"}
+                >
+                  <details
+                    style={{}}
+                    className={"openapi-markdown__details response"}
+                    data-collapsed={false}
+                    open={true}
+                  >
+                    <summary
+                      style={{}}
+                      className={"openapi-markdown__details-summary-response"}
+                    >
+                      <strong>
+                        Schema
+                      </strong>
+                    </summary><div
+                      style={{"textAlign":"left","marginLeft":"1rem"}}
+                    >
+                      
+                    </div><ul
+                      style={{"marginLeft":"1rem"}}
+                    >
+                      <SchemaItem
+                        collapsible={true}
+                        className={"schemaItem"}
+                      >
+                        <details
+                          style={{}}
+                          className={"openapi-markdown__details"}
+                        >
+                          <summary
+                            style={{}}
+                          >
+                            <span
+                              className={"openapi-schema__container"}
+                            >
+                              <strong
+                                className={"openapi-schema__property"}
+                              >
+                                errors
+                              </strong><span
+                                className={"openapi-schema__name"}
+                              >
+                                 object[]
+                              </span>
+                            </span>
+                          </summary><div
+                            style={{"marginLeft":"1rem"}}
+                          >
+                            <div
+                              style={{"marginTop":".5rem","marginBottom":".5rem"}}
+                            >
+                              
+                              
+                              The list of API errors
+                              
+                              
+                            </div><li>
+                              <div
+                                style={{"fontSize":"var(--ifm-code-font-size)","opacity":"0.6","marginLeft":"-.5rem","paddingBottom":".5rem"}}
+                              >
+                                Array [
+                              </div>
+                            </li><SchemaItem
+                              collapsible={false}
+                              name={"message"}
+                              required={false}
+                              schemaName={"string"}
+                              qualifierMessage={undefined}
+                              schema={{"type":"string","description":"The error or warning message"}}
+                            >
+                              
+                            </SchemaItem><SchemaItem
+                              collapsible={false}
+                              name={"code"}
+                              required={false}
+                              schemaName={"string"}
+                              qualifierMessage={undefined}
+                              schema={{"type":"string","description":"The message code"}}
+                            >
+                              
+                            </SchemaItem><SchemaItem
+                              collapsible={true}
+                              className={"schemaItem"}
+                            >
+                              <details
+                                style={{}}
+                                className={"openapi-markdown__details"}
+                              >
+                                <summary
+                                  style={{}}
+                                >
+                                  <span
+                                    className={"openapi-schema__container"}
+                                  >
+                                    <strong
+                                      className={"openapi-schema__property"}
+                                    >
+                                      details
+                                    </strong><span
+                                      className={"openapi-schema__name"}
+                                    >
+                                       object
+                                    </span>
+                                  </span>
+                                </summary><div
+                                  style={{"marginLeft":"1rem"}}
+                                >
+                                  <div
+                                    style={{"marginTop":".5rem","marginBottom":".5rem"}}
+                                  >
+                                    
+                                    
+                                    any additional details
+                                    
+                                    
+                                  </div><SchemaItem
+                                    name={"property name*"}
+                                    required={false}
+                                    schemaName={"any"}
+                                    qualifierMessage={undefined}
+                                    schema={{"type":"object","additionalProperties":{},"description":"any additional details"}}
+                                    collapsible={false}
+                                    discriminator={false}
+                                  >
+                                    
+                                  </SchemaItem>
+                                </div>
+                              </details>
+                            </SchemaItem><li>
+                              <div
+                                style={{"fontSize":"var(--ifm-code-font-size)","opacity":"0.6","marginLeft":"-.5rem"}}
+                              >
+                                ]
+                              </div>
+                            </li>
+                          </div>
+                        </details>
+                      </SchemaItem>
+                    </ul>
+                  </details>
+                </TabItem><TabItem
+                  label={"Example (from schema)"}
+                  value={"Example (from schema)"}
+                >
+                  <ResponseSamples
+                    responseExample={"{\n  \"errors\": [\n    {\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"details\": {}\n    }\n  ]\n}"}
+                    language={"json"}
+                  >
+                    
+                  </ResponseSamples>
+                </TabItem>
+              </SchemaTabs>
+            </TabItem>
+          </MimeTabs>
+        </div>
+      </TabItem>
+    </ApiTabs>
+  </div>
+</div>
+      

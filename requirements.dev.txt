@@ -1,0 +1,11 @@
+bandit
+black
+coverage
+generateDS
+Jinja2
+mypy
+twine
+wheel
+typer[all]
+setuptools
+pycairo; platform_system == "Darwin"

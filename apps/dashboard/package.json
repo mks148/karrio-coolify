@@ -1,0 +1,26 @@
+{
+  "name": "@karrio/dashboard",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "gen:rest": "cd ..; ./bin/generate-rest-types",
+    "gen:graph": "cd ..; ./bin/generate-graphql-types",
+    "build:image": "cd ..; ./bin/build-dashboard-image"
+  },
+  "dependencies": {
+    "@karrio/core": "*",
+    "@karrio/hooks": "*",
+    "@karrio/lib": "*",
+    "@karrio/types": "*",
+    "@karrio/ui": "*"
+  },
+  "devDependencies": {
+    "eslint": "7.32.0",
+    "eslint-config-custom": "*",
+    "eslint-config-next": "^13.1.2",
+    "tsconfig": "*"
+  }
+}

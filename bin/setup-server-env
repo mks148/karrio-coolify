@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+
+# Create new python virtual environment
+source "bin/create-new-env"
+
+# Install requirements
+cd "${ROOT}"
+pip install -r "${ROOT:?}/requirements.server.dev.txt"
+cd -
+
+if [[ "${HAS_INSIDERS}" == "true" && ! "$*" == *--exclude-insiders* ]]; then
+    source "${INSIDERS_DIR:?}/bin/setup-insiders"
+    pip install -r "${INSIDERS_REQUIREMENTS:?}"
+fi
+
+# run server script help
+source "bin/server"
+
+mkdir -p $LOG_DIR

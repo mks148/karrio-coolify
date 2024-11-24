@@ -1,0 +1,26 @@
+#!/usr/bin/env bash
+
+# Install system dependencies
+if [ "$(uname)" == "Darwin" ]; then
+    # Mac OS X platform
+    brew install gcc pango libffi ghostscript
+elif [ "$(expr substr $(uname -s) 1 5)" == "Linux" ]; then
+    # GNU/Linux platform
+    apt update -y && apt install -y libpango1.0-0 libpangoft2-1.0-0 gcc ghostscript
+fi
+
+# Install python dependencies
+pip3 install -r https://raw.githubusercontent.com/karrioapi/karrio/HEAD/requirements.txt
+
+# Setup working directory
+export WORK_DIR=.karrio/app
+export LOG_DIR=.karrio/log
+export WORKER_DB_DIR=.karrio/data
+export STATIC_ROOT_DIR=.karrio/static
+mkdir -p $WORK_DIR $LOG_DIR $WORKER_DB_DIR $STATIC_ROOT_DIR
+
+# Download gunicorn config
+curl https://raw.githubusercontent.com/karrioapi/karrio/HEAD/server/gunicorn-cfg.py --output "${WORK_DIR}/gunicorn-cfg.py"
+
+# Download .env sample
+curl https://raw.githubusercontent.com/karrioapi/karrio/HEAD/.env
