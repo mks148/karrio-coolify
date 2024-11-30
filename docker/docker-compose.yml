@@ -59,7 +59,7 @@ services:
         condition: service_healthy
         restart: true
     environment:
-      KARRIO_URL: http://api:${KARRIO_HTTP_PORT:-5002}
+      KARRIO_URL: http://147.79.78.99:${KARRIO_HTTP_PORT:-5002}
       NEXTAUTH_SECRET: ${JWT_SECRET}
       NEXT_PUBLIC_DASHBOARD_URL: ${DASHBOARD_URL}
       NEXT_PUBLIC_KARRIO_PUBLIC_URL: ${KARRIO_PUBLIC_URL}
