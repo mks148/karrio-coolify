@@ -13,7 +13,9 @@
     "tsconfig": "*",
     "turbo": "^2.1.3"
   },
-  "name": "karrio",
+  "name": "your-shipping-platform",
+  "description": "Your shipping platform description",
+  "author": "Your Company Name",
   "workspaces": [
     "apps/*",
     "packages/*"
