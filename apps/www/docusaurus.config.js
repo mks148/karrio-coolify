@@ -19,9 +19,9 @@ const posthogPlugins = (
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Karrio',
-  tagline: 'The Open source shipping API for enterprise and platform.',
-  url: 'https://karrio.io',
+  title: 'TrackPackage',
+  tagline: 'Your Complete Shipping Solution',
+  url: 'https://trackpackage.ca',
   baseUrl: '/',
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
@@ -169,11 +169,10 @@ const config = {
       image: 'img/karrio.png',
       metaImage: 'img/karrio.png',
       navbar: {
-        // title: 'Karrio',
+        title: 'TrackPackage',
         logo: {
-          alt: 'Karrio',
+          alt: 'TrackPackage Logo',
           src: 'img/logo.svg',
-          srcDark: 'img/logo-inverted.svg',
         },
         items: [
           {
@@ -212,23 +211,11 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: 'Resources',
+            title: 'Docs',
             items: [
               {
-                label: 'Docs',
-                to: '/',
-              },
-              {
-                label: 'Carriers',
-                to: '/carriers',
-              },
-              {
-                label: 'Product',
-                to: '/product',
-              },
-              {
-                label: 'API Reference',
-                href: '/reference/openapi',
+                label: 'Documentation',
+                to: 'https://trackpackage.ca/docs',
               },
             ],
           },
@@ -236,20 +223,8 @@ const config = {
             title: 'Community',
             items: [
               {
-                label: 'Launch week X',
-                href: 'https://www.karrio.io/launch-week-x',
-              },
-              {
-                label: 'Discussions',
-                href: 'https://github.com/karrioapi/karrio/discussions',
-              },
-              {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/karrio',
-              },
-              {
-                label: 'Twitter',
-                href: 'https://twitter.com/karrio',
+                label: 'Support',
+                href: 'https://trackpackage.ca/support',
               },
             ],
           },
@@ -288,7 +263,7 @@ const config = {
           alt: 'Karrio Inc.',
           src: 'img/logo-inverted.svg',
         },
-        copyright: `Copyright © ${new Date().getFullYear()} karrio Inc.`,
+        copyright: `Copyright © ${new Date().getFullYear()} TrackPackage. All rights reserved.`,
       },
       tableOfContents: {
         minHeadingLevel: 2,
