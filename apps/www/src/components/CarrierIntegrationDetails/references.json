@@ -1,7 +1,7 @@
 {
   "VERSION": "2024.9.15",
-  "APP_NAME": "Karrio",
-  "APP_WEBSITE": "https://karrio.io",
+  "APP_NAME": "TrackPackage",
+  "APP_WEBSITE": "https://trackpackage.ca/",
   "HOST": "http://localhost:5002/",
   "ADMIN": "http://localhost:5002/admin",
   "GRAPHQL": "http://localhost:5002/graphql",

@@ -12,8 +12,8 @@ DEFAULT_ALLOWED_CONFIG = [
     "BASE_FOOTER_TEMPLATE",
 ]
 FALLBACK_VALUES = {
-    "APP_NAME": "Karrio",
-    "APP_WEBSITE": "https://karrio.io",
+    "APP_NAME": "TrackPackage",
+    "APP_WEBSITE": "https://trackpackage.ca/",
     "SUPPORT_EMAIL": "hello@karrio.io",
     "BASE_TEMPLATE": "karrio/base_site.html",
     "BASE_FOOTER_TEMPLATE": "karrio/base_footer.html",
